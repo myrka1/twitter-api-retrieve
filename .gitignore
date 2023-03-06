@@ -1,4 +1,4 @@
-application.properties
+src/main/java/application.properties
 pagination2.txt
 pagination3.txt
 audit.txt
@@ -37,4 +37,4 @@ build/
 
 ### VS Code ###
 .vscode/
-application.properties
+src/main/java/application.properties

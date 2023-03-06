@@ -24,12 +24,15 @@ To use Tweets, follow these steps:
 
     /singletweet: Retrieves information on a single tweet using tweet ID (GET method). The Twitter API endpoint used is "https://api.twitter.com/2/tweets/{TWEET ID}?tweet.fields=created_at,author_id".
 			To access this endpoint, replace {TWEET ID HERE} in the local host link localhost:8080/singletweet?tweetId={TWEET ID HERE} with a 19-digit tweet ID, which can be found at the end of the URL of the tweet's page.
+    
     /singleuser: Retrieves information on a single user using Twitter username (GET method). The Twitter API endpoint used is "https://api.twitter.com/2/users/by?usernames={TWITTER USERNAME}&user.fields=created_at".
 			To access this endpoint, replace {TWITTER USERNAME} in the local host link localhost:8080/singleuser?username={TWITTER USERNAME} with a valid Twitter username.
+    
     /timeline: Retrieves the first five recent tweets in a user's timeline using Twitter username (GET method). The Twitter API endpoint used is "https://api.twitter.com/2/users/{TWITTER USER ID}/tweets?tweet.fields=created_at&expansions=author_id&user.fields=created_at&max_results=5".
-			Note that even though a Twitter username is accepted by the endpoint, the program uses the /singleuser endpoint to find the user ID from the username input.
+			Note that even though a Twitter username is accepted by the endpoint, the program uses the /singleuser endpoint to find the user ID from the username input. The local host link would instead be localhost:8080/timeline?username={TWITTER USERNAME} with a Twitter username
+    
     /pagination: Retrieves the whole timeline of a user using Twitter username (GET method). The Twitter API endpoint used is "https://api.twitter.com/2/users/{TWITTER USER ID}/tweets?tweet.fields=created_at,author_id&max_results=100".
-			Note that even though a Twitter username is accepted by the endpoint, the program uses the /singleuser endpoint to find the user ID from the username input.
+			Note that even though a Twitter username is accepted by the endpoint, the program uses the /singleuser endpoint to find the user ID from the username input. The local host link would be localhost:8080/pagination?username={TWITTER USERNAME} with a Twitter username.
 
 ## Requirements
 
