@@ -1,4 +1,4 @@
-# Tweets
+# Twitter Project
 
 Tweets is a Java program that retrieves tweet and user information from the Twitter API using OAuth 2.0 App-Only authentication.
 It is built using Spring Boot and requires access to the Twitter API through the Twitter Developer platform.
